@@ -1,4 +1,4 @@
-﻿// MyClass.cs in David Knoble's Project 
+﻿// Extensions.cs in David Knoble's Project 
 
 using System;
 
