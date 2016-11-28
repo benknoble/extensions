@@ -46,5 +46,17 @@ namespace Knoble.Utils
 		{
 			return RandomDate (new DateTime (0), Utc);
 		}
+
+		/// <summary>
+		/// Creates a <see cref="T:Knoble.Utils.Loading"/> object for displaying loading text to the console.
+		/// </summary>
+		/// <returns>The <see cref="T:Knoble.Utils.Loading"/> object.</returns>
+		/// <param name="productName">Product name.</param>
+		/// <param name="loadingText">Loading text.</param>
+		/// <param name="millisecondsDelay">Milliseconds delay.</param>
+		public static ConsoleLoadingText CreateLoading (string productName = ConsoleLoadingText.DefaultProductName, string loadingText = ConsoleLoadingText.DefaultLoadingText, int millisecondsDelay = ConsoleLoadingText.DefaultMillisecondsDelay)
+		{
+			return new ConsoleLoadingText (productName, loadingText, millisecondsDelay);
+		}
 	}
 }
