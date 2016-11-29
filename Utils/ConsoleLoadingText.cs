@@ -63,6 +63,8 @@ namespace Knoble.Utils
 				throw new ArgumentException (nameof (productName));
 			if (loadingText == null)
 				throw new ArgumentException (nameof (loadingText));
+			if (millisecondsDelay < 0)
+				throw new ArgumentException (nameof (millisecondsDelay));
 			this.productName = productName;
 			this.loadingText = loadingText;
 			this.millisecondsDelay = millisecondsDelay;
