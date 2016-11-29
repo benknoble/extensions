@@ -75,6 +75,7 @@ namespace Knoble.Utils
 		{
 			return Task.Run (() =>
 			{
+				@continue = true;
 				while (@continue)
 				{
 					Console.Write ($"\r{productName} {loadingText} {spinner[i]}");
