@@ -1,4 +1,4 @@
-﻿// Utils.cs in David Knoble's Project 
+﻿// Utils.cs in David Knoble's Project
 
 using System;
 
